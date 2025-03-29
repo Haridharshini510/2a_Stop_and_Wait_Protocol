@@ -12,8 +12,7 @@ To write a python program to perform stop and wait protocol
 
 
 CLIENT:
-import socket
-
+import socket \n
 s=socket.socket()
 
 s.listen(5)
