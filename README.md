@@ -12,33 +12,22 @@ To write a python program to perform stop and wait protocol
 
 
 CLIENT:
-import socket \n
-s=socket.socket()
 
-s.listen(5)
-
-c,addr=s.accept()
-
+import socket  
+s=socket.socket() 
+s.listen(5) 
+c,addr=s.accept() 
 while True:
-
- i=input("Enter a data: ")
- 
- c.send(i.encode())
- 
+ i=input("Enter a data: ") 
+ c.send(i.encode()) 
  ack=c.recv(1024).decode()
- 
  if ack:
- 
     print(ack)
-    
     continue
-    
  else:
- 
     c.close()
-    
     break
-
+    
 SERVER:
 
 import socket
