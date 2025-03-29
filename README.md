@@ -18,7 +18,7 @@ s=socket.socket() <br>
 s.listen(5) <br>
 c,addr=s.accept() <br>
 while True:<br>
-<t> i=input("Enter a data: ") <br>
+&nbsp;i=input("Enter a data: ") <br>
 <t> c.send(i.encode()) <br>
    ack=c.recv(1024).decode()<br>
    if ack:<br>
