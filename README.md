@@ -22,11 +22,11 @@ while True:<br>
 &nbsp;   c.send(i.encode()) <br>
 &nbsp;   ack=c.recv(1024).decode()<br>
 &nbsp;   if ack:<br>
-&nbsp;&nbsp;          print(ack)<br>
-&nbsp;&nbsp;          continue<br>
+&nbsp;&nbsp;&nbsp;          print(ack)<br>
+&nbsp;&nbsp;&nbsp;          continue<br>
 &nbsp;   else:<br>
-&nbsp;&nbsp;          c.close()<br>
-&nbsp;&nbsp;          break<br>
+&nbsp;&nbsp;&nbsp;          c.close()<br>
+&nbsp;&nbsp;&nbsp;          break<br>
     
 SERVER:
 
