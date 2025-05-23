@@ -15,7 +15,9 @@ CLIENT:
 
 import socket  <br>
 s=socket.socket() <br>
+
 s.bind(('localhost',8000))
+
 s.listen(5) <br>
 c,addr=s.accept() <br>
 while True:<br>
